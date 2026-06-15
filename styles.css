@@ -1,0 +1,123 @@
+/* AQUI DEFINIMOS EL FONDO DE LA PAGINA EN EL BODY */
+body{
+    background-color: #011A38;
+}
+
+/* AQUI DEFINIMOS EL CUADRO DONDE SE INGRESA AL AULA */
+.contenedor {
+    width: 1350px;                 /* Ancho */
+    margin-top: 0   ;
+    height: 155px;                /* Alto */
+    background-color: #FFFFFF;    /* Fondo azul claro */
+    padding: 15px;                /* Separación del texto con el borde */
+    margin: 10px auto;            /* Separa el cuadro arriba/abajo y lo centra */
+     display: flex;              /* activa flexbox */
+      justify-content: space-between; /* separa elementos a extremos */
+      align-items: center;        /* centra verticalmente */
+   /*  border: 3px solid #3498db;     Borde azul de 3 píxeles */
+   /* border-radius: 8px;            Esquinas redondeadas */
+   /* box-shadow: 4px 4px 10px rgba(0,0,0,0.1); Sombra suave */
+}
+
+/* AQUI DEFINIMOS LA IMAGEN CON DATOS DEL COLEGIO A LA IZQUIERDA */
+.contenedor img {
+    width: 745px;  
+    height: auto;
+    position: relative;
+    left: 45px;
+}
+
+/* AQUI DEFINIMOS EL BOTON DONDE SE INGRESA AL AULA A LA DERECHA */
+.ingreso-aula
+{
+    width: 400px;                 /* Ancho */
+    height: 85px;                /* Alto */
+    background-color:#011A38;    /* Fondo azul claro */
+    border-radius: 45px;
+    /* INICIO: CON ESTE CODIGO LOGRAMOS QUE LO QUE ESCRIBAMOS QUEDE EN EL CENTRO DEL CUADRO*/
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    /* FIN: CON ESTE CODIGO LOGRAMOS QUE LO QUE ESCRIBAMOS QUEDE EN EL CENTRO DEL CUADRO*/
+    cursor: pointer;
+      z-index: 1; /* asegura que el texto esté visible */
+    
+}
+
+.ingreso-aula img {
+    position: absolute; /* se coloca encima del cuadro */
+    width: 100px; /* definimos el tamaño de la imagen */
+    transform: rotate(-45deg); /* rotamos en sentido antihorario la imagen */
+    float: right;   /* se mueve a la derecha */
+    margin: 1300px; /* movemos a gusto de cada uno hacia la derecha */
+    display: flex ;
+    
+    
+}
+
+/* AQUI DEFINIMOS EL EL TEXTO DE AULA VIRTUAL 2026 */
+h1 {
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+}
+
+/* AQUI DEFINIMOS EL CUADRO CON LAS OPCIONES DEL COLEGIO */
+.cuadro2 {
+    width: 1350px;                 /* Ancho */
+    height: 30px;                /* Alto */
+    background-color: #ABC2E3;    /* Fondo azul claro */
+    padding: 15px;                /* Separación del texto con el borde */
+    margin: 10px auto;            /* Separa el cuadro arriba/abajo y lo centra */
+   /*  border: 3px solid #3498db;     Borde azul de 3 píxeles */
+   /* border-radius: 8px;            Esquinas redondeadas */
+   /* box-shadow: 4px 4px 10px rgba(0,0,0,0.1); Sombra suave */
+   display: flex;
+   justify-content: center;    /* centra horizontalmente */
+   align-items: center;        /* centra verticalmente */
+}
+
+.cuadro2 h3 {
+    color: #FFFFFF;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal; /* elimina la negrita */
+    cursor: pointer;
+    margin: 28px;
+}
+
+#admision {
+    color: #FFFFFF;
+    font-size: 22px;   
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#mivideo{
+
+    text-align: center;
+}
+
+ h3.activo {
+  color: black;        /* color cuando está seleccionada */
+  font-weight: bold; /* hacemos negrita*/
+ }
+    
+p{
+    color: #FFFFFF;
+    margin: 185px; /* empuja el texto */
+    margin-top: 0; /* elimina el margen superior */
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-weight: bold;
+    line-height: 1.5; /* controlamos el interlineado */
+}
+
+#queridos {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFFFFF;
+    font-size: 48px;
+}

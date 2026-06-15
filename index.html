@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>IEP INDEPENDENCIA - LAMBAYEQUE</title>
+    <link rel="stylesheet" href="styles.css"> <!-- AQUI LLAMAMOS LA HOJA DE ESTILOS QUE HEMOS CREADO -->
+</head>
+
+<body>
+    <div class="contenedor">
+        <!-- INICIO: AQUI VA LA IMAGEN AL LADO IZQUIERDO CON INFORMACION DEL COLEGIO -->
+        <img src="imagen.png" alt="Descripción de la imagen">
+        <!-- FIN: AQUI VA LA IMAGEN AL LADO IZQUIERDO CON INFORMACION DEL COLEGIO --> 
+
+
+        <!-- INICIO: AQUI VA EL BOTON AL LADO DERECHO PARA INGRESAR AL AULA VIRTUAL -->
+        <button class="ingreso-aula"  onclick="window.location.href='https://www.intranet.c-independencia.com/intranet/'"         style="cursor:pointer">  
+            <h1> AULA VIRTUAL 2026 </h1>
+          <!-- <img src="dedo.png" alt="Descripción de la imagen">  --> 
+        </button>
+         <!-- FIN: AQUI VA EL BOTON AL LADO DERECHO PARA INGRESAR AL AULA VIRTUAL -->
+        
+    </div>
+
+    <div class="cuadro2">
+    <!-- INICIO: OPCIONES DE LA PAGINA  --> 
+        <h3 class="opcion" onclick="window.location.href='index.html'" > Inicio </h3>
+        <h3 class="opcion"  onclick="window.location.href='nosotros.html'"> Nosotros </h3> 
+        <h3 class="opcion" onclick="window.location.href='admision.html'"> Admisión </h3>
+        <h3 class="opcion" onclick="window.location.href='uniformes.html'"> Uniformes </h3>
+        <h3 class="opcion" onclick="window.location.href='actividades.html'"> Actividades y Comunicados </h3>
+        <h3 class="opcion" onclick="window.location.href='transparencia.html'"> Transparencia </h3>
+        <h3 class="opcion" onclick="window.location.href='contacto.html'"> Contacto </h3>
+     <!-- FIN: OPCIONES DE LA PAGINA  --> 
+    </div>
+
+    <div id="mivideo">
+        <!-- INICIO: Agrego un video que se reproduzca de manera automatica -->
+        <video width="1280" height="910" autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <!-- FIN: Agrego un video que se reproduzca de manera automatica -->
+    </div>
+
+</br>
+
+     
+
+
+   <!-- INICIO: CODIGO PARA LOGRAR QUE AL DAR CLICK EN UNA DE LAS OPCIONES SE PINTE DE NEGRO  --> 
+    <script>
+        // Seleccionamos todas las etiquetas con clase "opcion"
+        const opciones = document.querySelectorAll(".opcion");
+        opciones.forEach(opcion => {
+        opcion.addEventListener("click", () => {
+            // Quitamos la clase "activo" de todas
+            opciones.forEach(o => o.classList.remove("activo"));
+            // Agregamos la clase "activo" solo a la que se clicó
+            opcion.classList.add("activo");
+        });
+        });
+    </script>
+    <!-- FIN: CODIGO PARA LOGRAR QUE AL DAR CLICK EN UNA DE LAS OPCIONES SE PINTE DE NEGRO  --> 
+
+</body>
+</html>
